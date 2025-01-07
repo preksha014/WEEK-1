@@ -10,7 +10,7 @@
         <h1>General Knowledge Quiz</h1>
         <p>Test your knowledge by answering the questions below:</p>
     </header>
-    <form action="/submit" method="post">
+    <form action="/submit" method="get  ">
         <fieldset disabled> <!-- Specify group of related elements (Attributes:disabled, form, name) -->
             <legend>1. Which insurance company launched the Sustainable Wealth 50 Index Fund?</legend> 
             <!-- caption for fieldset -->
@@ -59,6 +59,10 @@
         <label for="q6">6. Select the color of ocean:</label>
         <input type="color" id="q6" name="q6" value="#ff0000">
         <br><br>
+
+        <label for="q7">7. Attach link of your resume:</label>
+        <input type="url" id="q7" name="q7" value=""><br><br>
+
         <button type="submit">Submit Quiz</button>
     </form>
 </body>
