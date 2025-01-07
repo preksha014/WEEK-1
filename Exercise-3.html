@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document3</title>
+</head>
+<body>
+    <header>
+        <h1>General Knowledge Quiz</h1>
+        <p>Test your knowledge by answering the questions below:</p>
+    </header>
+    <form action="/submit" method="post">
+        <fieldset disabled> <!-- Specify group of related elements (Attributes:disabled, form, name) -->
+            <legend>1. Which insurance company launched the Sustainable Wealth 50 Index Fund?</legend> 
+            <!-- caption for fieldset -->
+            <input type="radio" name="q1" value="ICICI Prudential Life" checked required>
+            <label for="ICICI Prudential Life">ICICI Prudential Life</label><br>
+            <input type="radio" name="q1" value="HDFC Life">
+            <label for="HDFC Life">HDFC Life</label><br>
+            <input type="radio" name="q1" value="SBI Life">
+            <label for="SBI Life">SBI Life</label><br>
+            <input type="radio" name="q1" value="Axis Max Life">
+            <label for="Axis Max Life"> Axis Max Life</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>2. Which of the following are programming languages? (Select all that apply)</legend>
+            <input type="checkbox" id="python" name="q2[]" value="Python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="html" name="q2[]" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="java" name="q2[]" value="Java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="css" name="q2[]" value="CSS">
+            <label for="css">CSS</label>
+        </fieldset>
+        <br>
+
+        <label for="q3">3. Where is the Kagyed Dance Festival, a significant Buddhist celebration, prominently held?</label><br>
+        <input type="text" id="q3" name="q3" placeholder="Enter your answer here" required>
+        <br><br>
+
+        <label for="q4">4. Discuss briefly about world chess champion Gukesh.</label><br>
+        <textarea id="q4" name="q4" placeholder="Write your answer here"></textarea>
+        <br><br>
+
+        <label for="q5">5. In which city has India’s first diabetes biobank been established?</label><br>
+        <select id="q5" name="q5" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bengaluru">Bengaluru</option>
+        </select>
+        <br><br>
+
+        <label for="q6">6. Select the color of ocean:</label>
+        <input type="color" id="q6" name="q6" value="#ff0000">
+        <br><br>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
